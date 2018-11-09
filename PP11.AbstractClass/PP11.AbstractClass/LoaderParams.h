@@ -1,4 +1,4 @@
-#include "GameObject.h"
+#include "SDLGameObject.h"
 
 class LoaderParams
 {
