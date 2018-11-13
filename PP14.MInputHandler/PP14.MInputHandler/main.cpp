@@ -21,13 +21,14 @@ int main(int argc, char* argv[])
 			TheGame::Instance()->render();
 			frameTime = SDL_GetTicks() - frameStart;
 
-			if (frameTime< DELAY_TIME)
+			if (frameTime < DELAY_TIME)
 			{
 				SDL_Delay((int)(DELAY_TIME - frameTime));
 			}
 		}
-
-	else {
+	}
+	else
+	{
 		std::cout << "game init failure - " << SDL_GetError() << "\n";
 		return -1;
 	}
